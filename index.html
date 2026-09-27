@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Murder Mystery — Case File #001</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🔍 DevOps Murder Mystery</h1>
+    <p class="subtitle">Case File #001 — The Production Server Hack</p>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <main>
+    <!-- LEFT: STORY + CLUES -->
+    <section class="panel story-panel">
+      <h2>📜 Case Briefing</h2>
+      <p>
+        A production server was compromised at <strong>03:42 AM on 2024-06-15</strong>.
+        The attacker accessed sensitive files, left traces in Docker containers,
+        and tampered with the Git history.
+      </p>
+      <p>
+        You are the <strong>Incident Response Team</strong>. Use real DevOps commands
+        to investigate. Find the criminal before time runs out.
+      </p>
+
+      <h2>🎯 Your Mission</h2>
+      <ol>
+        <li>Find hidden files in <code>~/case_files</code></li>
+        <li>Read the hidden clue</li>
+        <li>Check who logged in successfully</li>
+        <li>Identify which file was accessed</li>
+        <li>Find the running Docker container</li>
+        <li>Extract evidence from inside the container</li>
+        <li>Determine the suspect's employee ID</li>
+        <li>Find the suspicious Git commit</li>
+        <li>Identify the pod with the suspect's label</li>
+        <li>Name the criminal</li>
+      </ol>
+
+      <h2>⏱️ Rules</h2>
+      <ul>
+        <li>Time limit: <strong>15 minutes</strong></li>
+        <li>Teams of 3–4</li>
+        <li>First team to correctly identify the criminal wins</li>
+        <li>No internet searches — use only the terminal below</li>
+      </ul>
+    </section>
+
+    <!-- RIGHT: TERMINAL -->
+    <section class="panel terminal-panel">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">detective@devops-mystery:~$</span>
+      </div>
+      <div id="terminal-output" class="terminal-output">
+        <p class="welcome">Welcome, Detective. Type <span class="cmd">help</span> to see available commands.</p>
+      </div>
+      <div class="terminal-input-line">
+        <span class="prompt">$</span>
+        <input
+          type="text"
+          id="terminal-input"
+          autocomplete="off"
+          autofocus
+          placeholder="Type a command..."
+        />
+      </div>
+    </section>
+  </main>
+
+  <!-- LEADERBOARD -->
+  <section class="leaderboard">
+    <h2>🏆 Leaderboard</h2>
+    <table id="leaderboard-table">
+      <thead>
+        <tr><th>Rank</th><th>Team</th><th>Time</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Team Alpha</td><td>08:42</td><td>✅ Solved</td></tr>
+        <tr><td>2</td><td>Team Bravo</td><td>11:15</td><td>✅ Solved</td></tr>
+        <tr><td>3</td><td>Team Charlie</td><td>—</td><td>⏳ In progress</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>DevOps Murder Mystery · Essentials in Cloud & DevOps · RA2311003010916 · RA231103010017 · RA231103010923</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
